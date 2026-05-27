@@ -11,6 +11,6 @@ final class PlayerController extends AbstractController
     #[Route('/player', name: 'player_index')]
     public function index(): Response
     {
-        return new Response ('Salut les SIO !');
+        return $this-> render ('base.html.twig');
     }
 }
