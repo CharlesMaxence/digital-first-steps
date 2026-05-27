@@ -1,0 +1,16 @@
+<?php
+
+namespace App\Controller;
+
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Attribute\Route;
+
+final class PlayerController extends AbstractController
+{
+    #[Route('/player', name: 'player_index')]
+    public function index(): Response
+    {
+        return new Response ('Salut les SIO !');
+    }
+}
